@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plástico e Petróleo: a pirólise como solução sustentável. Projeto de pesquisa sobre a conversão de resíduos plásticos em óleo combustível." />
+  <title>Pirólise · Plástico e Petróleo — Projeto FCiências</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">
+      <span class="nav__flame">▲</span>
+      <span>PIRÓLISE</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#problema">O Problema</a>
+      <a href="#pirolise">A Pirólise</a>
+      <a href="#processo">Como Funciona</a>
+      <a href="#plasticos">Plásticos</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#metodologia">Metodologia</a>
+      <a href="#cronograma">Cronograma</a>
+      <a href="#referencias">Referências</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu">☰</button>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__content">
+      <span class="hero__tag">Trabalho de Pesquisa · FCiências · SENAC</span>
+      <h1 class="hero__title">
+        PLÁSTICO E <span class="grad">PETRÓLEO</span><br />
+        A pirólise como solução sustentável
+      </h1>
+      <p class="hero__subtitle">
+        Transformar resíduos plásticos em óleo combustível através da decomposição
+        térmica sem oxigênio — reduzindo poluição e recuperando energia.
+      </p>
+
+      <div class="hero__ods">
+        <span class="ods ods--12">ODS 12 · Consumo responsável</span>
+        <span class="ods ods--13">ODS 13 · Ação climática</span>
+        <span class="ods ods--15">ODS 15 · Vida terrestre</span>
+      </div>
+
+      <div class="hero__cta">
+        <a href="#pirolise" class="btn btn--primary">Assistir animação</a>
+        <a href="#processo" class="btn btn--ghost">Ver o processo</a>
+      </div>
+    </div>
+    <div class="hero__scroll">↓ role para explorar</div>
+  </section>
+
+  <!-- ============ PROBLEMA ============ -->
+  <section class="section" id="problema">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">O Problema</h2>
+    </div>
+    <p class="section__lead">
+      O crescimento acelerado da produção e do descarte inadequado de plásticos é um
+      dos maiores desafios ambientais da atualidade. Grande parte desses resíduos não é
+      reciclada e acaba em aterros, rios e oceanos.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat__num" data-count="9">0</div>
+        <div class="stat__unit">bilhões de ton.</div>
+        <p class="stat__desc">de plástico produzidas no mundo desde 1950.</p>
+      </div>
+      <div class="stat stat--danger">
+        <div class="stat__num" data-count="9">0</div>
+        <div class="stat__unit">% reciclado</div>
+        <p class="stat__desc">Apenas 9% de todo esse plástico foi reciclado.</p>
+      </div>
+      <div class="stat">
+        <div class="stat__num" data-count="700">0</div>
+        <div class="stat__unit">°C</div>
+        <p class="stat__desc">Temperatura da pirólise que "reverte" o plástico em óleo.</p>
+      </div>
+    </div>
+    <p class="stat__source">Fonte: Geyer, Jambeck &amp; Law (Science Advances, 2017); Pinto et al. (2012).</p>
+  </section>
+
+  <!-- ============ PIRÓLISE + VÍDEO ============ -->
+  <section class="section section--dark" id="pirolise">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">O que é a Pirólise?</h2>
+    </div>
+    <p class="section__lead">
+      A pirólise é a decomposição térmica do plástico em um ambiente <strong>sem oxigênio</strong>,
+      a temperaturas de até 700&nbsp;°C. Como o plástico é feito de hidrocarbonetos — as mesmas
+      moléculas do petróleo — ele se decompõe em três produtos: <strong>óleo combustível, gases e carvão</strong>.
+    </p>
+
+    <!-- ESPAÇO PARA O VÍDEO DE ANIMAÇÃO -->
+    <div class="video">
+      <div class="video__frame" id="videoFrame">
+        <!--
+          COLOQUE SEU VÍDEO AQUI.
+          Opção A — arquivo local: descomente o <video> abaixo e coloque
+          o arquivo em assets/animacao.mp4
+          Opção B — YouTube: descomente o <iframe> e cole a URL de embed.
+        -->
+
+        <!-- OPÇÃO A: vídeo local
+        <video controls poster="assets/pirolise-diagrama.png">
+          <source src="assets/animacao.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
+        -->
+
+        <!-- OPÇÃO B: YouTube
+        <iframe src="https://www.youtube.com/embed/SEU_ID_AQUI"
+          title="Animação da Pirólise" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        -->
+
+        <!-- Placeholder (remova quando adicionar o vídeo) -->
+        <div class="video__placeholder">
+          <div class="video__play">▶</div>
+          <p><strong>Espaço reservado para o vídeo de animação</strong></p>
+          <p class="video__hint">Substitua no <code>index.html</code> pela Opção A (arquivo <code>assets/animacao.mp4</code>) ou Opção B (YouTube).</p>
+        </div>
+      </div>
+      <figcaption class="video__caption">
+        Animação ilustrativa do reator de pirólise e do fluxo de conversão do plástico em óleo.
+      </figcaption>
+    </div>
+  </section>
+
+  <!-- ============ PROCESSO (DIAGRAMA) ============ -->
+  <section class="section" id="processo">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Como Funciona</h2>
+    </div>
+    <p class="section__lead">
+      O reator converte o plástico em óleo em quatro etapas. Passe o mouse (ou toque) nos
+      pontos do diagrama para entender cada uma.
+    </p>
+
+    <div class="processo">
+      <!-- DIAGRAMA -->
+      <figure class="processo__diagram">
+        <img src="assets/pirolise-diagrama.png" alt="Diagrama do reator de pirólise"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="processo__imgfallback" style="display:none;">
+          <p>🖼️ Coloque a imagem do reator em<br /><code>assets/pirolise-diagrama.png</code></p>
+        </div>
+      </figure>
+
+      <!-- ETAPAS -->
+      <ol class="steps">
+        <li class="step">
+          <span class="step__dot">1</span>
+          <div>
+            <h3>Entrada de Plástico</h3>
+            <p>Plásticos triturados (PE, PP, PS) são inseridos no reator pelo funil de alimentação.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__dot step__dot--fire">2</span>
+          <div>
+            <h3>Câmara de Aquecimento (700&nbsp;°C)</h3>
+            <p>Sem oxigênio, o calor quebra as longas cadeias de hidrocarbonetos — o material não queima, se decompõe.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__dot">3</span>
+          <div>
+            <h3>Saída &amp; Condensador</h3>
+            <p>Os gases resultantes sobem e passam pelo condensador (sistema de resfriamento), voltando ao estado líquido.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__dot">4</span>
+          <div>
+            <h3>Tanque de Óleo</h3>
+            <p>O óleo combustível condensado é recolhido no tanque de saída, pronto para uso ou refino.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PLÁSTICOS ============ -->
+  <section class="section section--dark" id="plasticos">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Nem Todo Plástico Serve</h2>
+    </div>
+    <p class="section__lead">
+      A qualidade e o rendimento do óleo dependem do tipo de plástico usado.
+    </p>
+
+    <div class="plastics">
+      <div class="plastic-col plastic-col--good">
+        <h3>✓ Recomendados</h3>
+        <div class="chip chip--good"><b>PE</b> Polietileno <span>Sacolas, embalagens</span></div>
+        <div class="chip chip--good"><b>PP</b> Polipropileno <span>Potes, tampas</span></div>
+        <div class="chip chip--good"><b>PS</b> Poliestireno <span>Isopor, copos</span></div>
+        <p class="plastic-note">Alto rendimento de óleo com características próximas às dos combustíveis reconhecidos pela ANP.</p>
+      </div>
+      <div class="plastic-col plastic-col--bad">
+        <h3>✕ Problemáticos</h3>
+        <div class="chip chip--bad"><b>PVC</b> Policloreto de vinila <span>Libera substâncias tóxicas</span></div>
+        <div class="chip chip--bad"><b>PET</b> Politereftalato <span>Baixo rendimento de óleo</span></div>
+        <p class="plastic-note">Pouco indicados: geram poucos produtos úteis ou liberam compostos perigosos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFÍCIOS ============ -->
+  <section class="section" id="beneficios">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Benefícios &amp; Economia Circular</h2>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card__icon">🌱</div>
+        <h3>Ambiental</h3>
+        <p>Reduz o acúmulo de lixo em aterros e oceanos e evita a abertura de novos poços de petróleo, diminuindo riscos de vazamento.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">⚙️</div>
+        <h3>Econômico</h3>
+        <p>Transforma resíduo sem valor em óleo combustível, gases e matéria-prima para a indústria química.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">🔁</div>
+        <h3>Economia Circular</h3>
+        <p>Os produtos podem virar lubrificantes, insumos químicos e até nanotubos, fechando o ciclo dos materiais.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">🧪</div>
+        <h3>Catálise</h3>
+        <p>O uso de catalisadores baixa a temperatura necessária e melhora a qualidade do produto final.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ METODOLOGIA ============ -->
+  <section class="section section--dark" id="metodologia">
+    <div class="section__head">
+      <span class="section__num">06</span>
+      <h2 class="section__title">Metodologia</h2>
+    </div>
+    <p class="section__lead">
+      Pesquisa <strong>qualitativa</strong>, do tipo <strong>revisão bibliográfica</strong>, de caráter
+      teórico-exploratório. Sem experimentos laboratoriais, sem envolvimento de seres humanos ou animais.
+    </p>
+    <div class="method">
+      <div class="method__item"><span>01</span><p>Levantamento em bases científicas (Google Acadêmico, Brazilian Journal of Development, Revista FT, Revista de Geopolítica, UFF, UFSM).</p></div>
+      <div class="method__item"><span>02</span><p>Seleção por relevância: artigos Qualis, dissertações e TCCs de instituições federais.</p></div>
+      <div class="method__item"><span>03</span><p>Leitura crítica e organização em tópicos temáticos: processo, tipos de plástico, variáveis e viabilidade.</p></div>
+      <div class="method__item"><span>04</span><p>Contraste de ideias para identificar convergências e divergências na literatura.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ CRONOGRAMA ============ -->
+  <section class="section" id="cronograma">
+    <div class="section__head">
+      <span class="section__num">07</span>
+      <h2 class="section__title">Cronograma</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl"><span class="tl__date">27/02</span><p>Definição do problema de pesquisa com a professora.</p></div>
+      <div class="tl"><span class="tl__date">06–20/03</span><p>Estudo de caso, objetivos e fundamentação teórica.</p></div>
+      <div class="tl"><span class="tl__date">27/03–22/05</span><p>Aprofundamento das pesquisas e orientação.</p></div>
+      <div class="tl"><span class="tl__date">29/05</span><p>Revisão final e submissão do projeto.</p></div>
+      <div class="tl"><span class="tl__date">12/06–31/07</span><p>Desenvolvimento do app/site com o coorientador do SENAC.</p></div>
+      <div class="tl"><span class="tl__date">Agosto</span><p>Correções, testagem e versão final do projeto.</p></div>
+      <div class="tl tl--last"><span class="tl__date">Setembro</span><p>Apresentação do protótipo na feira de conhecimento da instituição.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ REFERÊNCIAS ============ -->
+  <section class="section section--dark" id="referencias">
+    <div class="section__head">
+      <span class="section__num">08</span>
+      <h2 class="section__title">Referências</h2>
+    </div>
+    <ul class="refs">
+      <li>CAMILO, T. T. et al. <em>Estudo do processo de pirólise de resíduo industrial de Polipropileno (PP)…</em> Brazilian Journal of Development, Curitiba, v. 9, n. 1, 2023. <a href="https://ojs.brazilianjournals.com.br/ojs/index.php/BRJD/article/view/56602" target="_blank" rel="noopener">Acessar</a></li>
+      <li>CARMO, A. H. M. do; ARAUJO, M. L. T. de; KHAN, A. <em>Conversão termoquímica de resíduos plásticos em combustíveis líquidos…</em> Revista de Geopolítica, v. 16, n. 5, 2025. <a href="https://revistageo.com.br/revgeo/article/view/1189" target="_blank" rel="noopener">Acessar</a></li>
+      <li>FIORELLI, F. C. C. <em>Pirólise de resíduos plásticos: revisão e perspectivas futuras.</em> TCC — UFF, Niterói, 2020. <a href="https://app.uff.br/riuff/handle/1/14902" target="_blank" rel="noopener">Acessar</a></li>
+      <li>GEYER, R.; JAMBECK, J. R.; LAW, K. L. <em>Production, use, and fate of all plastics ever made.</em> Science Advances, v. 3, n. 7, 2017.</li>
+      <li>OLIVEIRA JÚNIOR, D. L. <em>Pirólise de resíduos plásticos visando à obtenção de produtos de alto valor agregado.</em> Dissertação (Mestrado) — UFSM, 2016.</li>
+      <li>PINTO, J. et al. <em>Impactos ambientais causados pelos plásticos.</em> 2. ed. Rio de Janeiro: E-papers, 2012.</li>
+      <li>SOARES ROLAND, C.; MARTINS, E. A.; SANTOS, A. M. dos. <em>Uma revisão sobre a pirólise de resíduos plásticos para a produção de óleo combustível.</em> Revista FT (Qualis B2). <a href="https://revistaft.com.br/uma-revisao-sobre-a-pirolise-de-residuos-plasticos-para-a-producao-de-oleo-combustivel/" target="_blank" rel="noopener">Acessar</a></li>
+    </ul>
+  </section>
+
+  <!-- ============ EQUIPE / FOOTER ============ -->
+  <footer class="footer" id="equipe">
+    <div class="footer__grid">
+      <div>
+        <h3 class="footer__title">Equipe</h3>
+        <ul class="team">
+          <li><b>Arthur</b> Bertolli Volz <span>3º ano E.M.</span></li>
+          <li><b>Davi</b> Lima de Oliveira <span>3º ano E.M.</span></li>
+          <li><b>Gabriel</b> Larentes Rodrigues <span>3º ano E.M.</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Orientação</h3>
+        <ul class="team">
+          <li><b>Amanda</b> Pott</li>
+          <li><b>Leonardo P.</b> Tirado</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Instituição</h3>
+        <p class="footer__inst">
+          UEP 39 — Unidade de Educação Profissional e Tecnológica<br />
+          SENAC · São José dos Pinhais · Paraná · Brasil
+        </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 · Projeto FCiências — Plástico e Petróleo: a pirólise como solução sustentável.</span>
+    </div>
+  </footer>
+
+  <div class="progress" id="progress"></div>
+  <script src="script.js"></script>
+</body>
+</html>

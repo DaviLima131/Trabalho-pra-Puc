@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force \"assets\")",
+      "PowerShell(Start-Process \"index.html\")"
+    ]
+  }
+}
