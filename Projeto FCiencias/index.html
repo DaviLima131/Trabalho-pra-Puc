@@ -104,36 +104,12 @@
       moléculas do petróleo — ele se decompõe em três produtos: <strong>óleo combustível, gases e carvão</strong>.
     </p>
 
-    <!-- ESPAÇO PARA O VÍDEO DE ANIMAÇÃO -->
     <div class="video">
       <div class="video__frame" id="videoFrame">
-        <!--
-          COLOQUE SEU VÍDEO AQUI.
-          Opção A — arquivo local: descomente o <video> abaixo e coloque
-          o arquivo em assets/animacao.mp4
-          Opção B — YouTube: descomente o <iframe> e cole a URL de embed.
-        -->
-
-        <!-- OPÇÃO A: vídeo local
         <video controls poster="assets/pirolise-diagrama.png">
-          <source src="assets/animacao.mp4" type="video/mp4" />
+          <source src="assets/anima%C3%A7%C3%A3o.mp4" type="video/mp4" />
           Seu navegador não suporta vídeo.
         </video>
-        -->
-
-        <!-- OPÇÃO B: YouTube
-        <iframe src="https://www.youtube.com/embed/SEU_ID_AQUI"
-          title="Animação da Pirólise" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        -->
-
-        <!-- Placeholder (remova quando adicionar o vídeo) -->
-        <div class="video__placeholder">
-          <div class="video__play">▶</div>
-          <p><strong>Espaço reservado para o vídeo de animação</strong></p>
-          <p class="video__hint">Substitua no <code>index.html</code> pela Opção A (arquivo <code>assets/animacao.mp4</code>) ou Opção B (YouTube).</p>
-        </div>
       </div>
       <figcaption class="video__caption">
         Animação ilustrativa do reator de pirólise e do fluxo de conversão do plástico em óleo.
@@ -329,6 +305,16 @@
           UEP 39 — Unidade de Educação Profissional e Tecnológica<br />
           SENAC · São José dos Pinhais · Paraná · Brasil
         </p>
+      </div>
+      <div>
+        <h3 class="footer__title">Compartilhe o site</h3>
+        <p class="footer__inst" id="siteQrMessage">
+          Publique o site para gerar um QR code com o endereço público.
+        </p>
+        <a class="footer__qr-download" id="siteQrDownload" hidden>
+          Baixar QR code
+          <img id="siteQrCode" alt="QR code para acessar este site" width="160" height="160" hidden />
+        </a>
       </div>
     </div>
     <div class="footer__bottom">

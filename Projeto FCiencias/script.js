@@ -57,3 +57,28 @@ const countIO = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.6 });
 document.querySelectorAll('[data-count]').forEach(el => countIO.observe(el));
+
+// ===== QR code do endereço público =====
+const qrImage = document.getElementById('siteQrCode');
+const qrDownload = document.getElementById('siteQrDownload');
+const qrMessage = document.getElementById('siteQrMessage');
+
+if (window.location.protocol === 'http:' || window.location.protocol === 'https:') {
+  const pageUrl = window.location.href;
+  const qrUrl = new URL('https://api.qrserver.com/v1/create-qr-code/');
+  qrUrl.search = new URLSearchParams({ size: '400x400', data: pageUrl }).toString();
+
+  const downloadUrl = new URL(qrUrl);
+  downloadUrl.searchParams.set('size', '1000x1000');
+  downloadUrl.searchParams.set('download', '1');
+
+  qrImage.src = qrUrl.toString();
+  qrDownload.href = downloadUrl.toString();
+  qrDownload.hidden = false;
+  qrImage.hidden = false;
+  qrMessage.textContent = 'Escaneie ou baixe o QR code para abrir esta página.';
+  qrImage.addEventListener('error', () => {
+    qrDownload.hidden = true;
+    qrMessage.textContent = 'Não foi possível carregar o QR code. Tente novamente mais tarde.';
+  }, { once: true });
+}
