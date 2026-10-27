@@ -16,12 +16,6 @@ Dê **duplo clique em `index.html`** — abre em qualquer navegador, sem instala
 O vídeo local já está conectado ao player na seção **A Pirólise**. Mantenha
 `animação.mp4` dentro de `assets/` para que ele continue aparecendo.
 
-## QR code do site
-O QR code é gerado automaticamente com o endereço da página quando o site é
-aberto pela internet (HTTP/HTTPS). Publique o site e use **Baixar QR code** no
-rodapé para salvar uma imagem que abre diretamente a página. A geração da imagem
-usa o serviço externo `api.qrserver.com`.
-
 ## Arquivos
 - `index.html` — conteúdo e estrutura
 - `styles.css` — visual (cores, layout)
